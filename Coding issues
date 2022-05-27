@@ -1,3 +1,9 @@
 Code 1:
 a=[sorted(list(set(input()))) for i in input().split()]
 print("true") if a[0]==a[1] else print("false")
+# input taking more than one time
+
+Code 2:
+if "a" or "e" in "sky":
+print("yes")
+#output is yes (need to know what happens)
