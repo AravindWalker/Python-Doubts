@@ -7,3 +7,21 @@ Code 2:
 if "a" or "e" in "sky":
 print("yes")
 #output is yes (need to know what happens)
+
+Code 3:
+n=int(input())
+a=list(map(int,input().split()))[:n]
+largest=sum(a)
+net_list=[i for i in a if i>=0]
+if len(net_list)==0:
+    print(max(a))
+else:
+    print(str(largest)) if largest>sum(net_list) else print(str(sum(net_list)))
+#output 
+        '''Input:
+        6
+        1 -2 1 -3 4 5
+        Expected Output:
+        9
+        Actual Output:
+        11'''
